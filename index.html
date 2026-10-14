@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantin SMK PI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kasir Kantin Sekolah SMK PI</h1>
+
+        <label>Nama Pembeli</label>
+        <input type="text" id="nama" placeholder="Masukan Nama">
+        <label>Pilih Produk</label>
+        <select id="produk">
+            <option value="20000">NasGor Goreng - Rp.20.000</option>
+            <option value="10000">MieGor Goreng - Rp.10.000</option>
+            <option value="3000">Es Teh - Rp.3.000</option>
+            <option value="5000">Jus Jeruk - Rp.5.000</option>
+        </select>
+
+        <label>Jumlah</label>
+        <input type="number" id="jumlah" value="1" min="1">
+        <button onclick="hitungTotal()">Hitung Total</button>
+
+        <div class="hasil">
+            <p>Nama : <span id="hasilNama">-</span></p>
+            <p>Total Harga : <span id="totalHarga">0</span></p>
+            <p>Diskon : <span id="diskon">0</span></p>
+            <p>Total Bayar : <span id="totalBayar">0</span></p>
+        </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
